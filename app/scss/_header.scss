@@ -1,0 +1,108 @@
+.header{
+    border-bottom: 1px solid $lightgray;
+    nav{
+        padding: 1.0625rem 1.5rem;
+    }
+
+    &__logo{
+        width: 8.8125rem;
+        height: 2.4rem;
+        cursor: pointer;
+    }
+
+    &__menu{ // Mobile Menu
+
+        > span {
+            display: block;
+            width: 22px;
+            height: 2.2px;
+            background-color: $lightgray;
+            
+            &:not(:last-child){
+                margin-bottom: 3.7px;
+            }
+        }
+    }
+
+    .button{
+        padding: 1.5rem 1rem;
+        font-size: $font-med;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: $orange;
+        box-shadow: 0 0 0px 3px $orange, inset 0 0 0px 2px $black;
+        border: none; 
+        
+    
+        &-buy{
+            background-color: $purple;
+            box-shadow: 0 0 0px 3px $purple, inset 0 0 0px 2px $black;
+            border: none; 
+            margin-left: 1rem;
+        }
+
+        &:hover{
+            opacity: 0.875;
+        }
+    }
+ 
+    .fab{
+        color:$lightgray;
+    }
+
+    .fa-discord{
+        padding-right: 1rem;
+        padding-left: 1rem;
+
+        &:hover{
+            color: darkblue;
+        }
+    }  
+
+    .fa-twitter:hover{
+        color: lightblue;
+    }
+    
+    .theme_changer{
+        background-color: inherit;
+        color: $lightgray;
+        border: none; 
+        padding: 0;
+        cursor: pointer;
+    }
+
+    &__links{
+        padding: 1.0625rem 1.5rem;
+        a{
+            position: relative;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: $lightgray;
+
+            &:not(:last-child){
+                margin-right: 36px;
+            }
+
+            &::before{
+                 content:"";
+                 position: absolute;
+                 display: block;
+                 height: 2.5px;
+                 background: $white;
+                 opacity: 0;
+                 left: 0;
+                 right: 0;
+                 bottom: -42px;
+                 
+            }
+
+            &:hover{
+                color: white;
+
+                &::before{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
