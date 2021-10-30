@@ -24,30 +24,8 @@
         }
     }
 
-    .button{
-        padding: 1.5rem 1rem;
-        font-size: $font-med;
-        border-radius: 10px;
-        cursor: pointer;
-        background-color: $orange;
-        box-shadow: 0 0 0px 3px $orange, inset 0 0 0px 2px $black;
-        border: none; 
-        
-    
-        &-buy{
-            background-color: $purple;
-            box-shadow: 0 0 0px 3px $purple, inset 0 0 0px 2px $black;
-            border: none; 
-            margin-left: 1rem;
-        }
-
-        &:hover{
-            opacity: 0.875;
-        }
-    }
- 
     .fab{
-        color:$lightgray;
+        color:$white;
     }
 
     .fa-discord{
@@ -59,16 +37,18 @@
         }
     }  
 
+
     .fa-twitter:hover{
         color: lightblue;
     }
     
     .theme_changer{
         background-color: inherit;
-        color: $lightgray;
+        color: $white;
         border: none; 
         padding: 0;
         cursor: pointer;
+        
     }
 
     &__links{
